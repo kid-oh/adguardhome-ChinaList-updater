@@ -45,4 +45,4 @@ crontab -e
 ```
 0 2 * * * /path/to/update_list.sh
 ```
-记得将/path/to/update_white_list.sh替换为脚本的实际路径。保存并退出编辑器，cron将在每天的2点自动运行脚本来更新白名单文件。
+记得将/path/to/update_list.sh替换为脚本的实际路径。保存并退出编辑器，cron将在每天的2点自动运行脚本来更新白名单文件。
