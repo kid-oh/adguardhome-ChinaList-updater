@@ -1,6 +1,6 @@
 # adguardhome-ChinaList-updater
 用于在OpenWRT上自动更新AdGuardHome的dnsmasq-china-list上游DNS配置文件的脚本
-
+### 具体步骤
 新建一个update_list.sh的文件，然后将以下代码复制进去，将代码自定义修改后扔进openwrt
 ```
 #!/bin/sh
