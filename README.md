@@ -20,7 +20,9 @@ if [ $? -eq 0 ]; then
     
 https://doh.apad.pro/dns-query
 8.8.8.8
-9.9.9.9
+9.9.9.11
+45.11.45.11
+208.67.222.222
 EOL
     
     # 重新加载AdGuardHome以应用新的白名单
