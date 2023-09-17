@@ -15,14 +15,20 @@ curl -o "$DESTINATION" https://adguard.yojigen.tech/ChinaList.txt
 if [ $? -eq 0 ]; then
     echo "ChinaList.txt 下载成功"
     
-    # 在文件末尾添加额外DNS用于列表外域名解析
+    # 在文件末尾添加额外DNS用于列表外域名解析（可自定义，建议设置成海外传统DNS，可有效避免DNS泄露）
     cat <<EOL >> "$DESTINATION"
     
 https://doh.apad.pro/dns-query
 8.8.8.8
+1.1.1.1
 9.9.9.11
 45.11.45.11
 208.67.222.222
+2001:4860:4860::8888
+2606:4700:4700::1111
+2620:fe::fe
+2a09::
+2620:119:35::35
 EOL
     
     # 重新加载AdGuardHome以应用新的白名单
