@@ -17,8 +17,7 @@ if [ $? -eq 0 ]; then
     
     # 在文件末尾添加额外DNS用于列表外域名解析（可自定义，建议设置成海外传统DNS，可有效避免DNS泄露）
     cat <<EOL >> "$DESTINATION"
-    
-https://doh.apad.pro/dns-query
+
 8.8.8.8
 1.1.1.1
 9.9.9.11
